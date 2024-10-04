@@ -1,4 +1,5 @@
 'use client'
+
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from "./component/ui/button/button";
@@ -54,8 +55,7 @@ export default function LandingPage() {
         <section className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-purple-400 mt-12 mb-6">Welcome to Our Complaint Portal</h2>
           <p className="text-base md:text-xl text-gray-300 mb-8">We are here to listen and help resolve your concerns.</p>
-          {/* Updated Submit Complaint Button */}
-          <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white md:text-lg sm:text-base px-4 py-4 md:px-6 md:py-3 sm:px-4 sm:py-2 mb-10 transition-all">
+          <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white md:text-lg mb-10">
             <Link href="#submit">Submit a Complaint</Link>
           </Button>
         </section>
@@ -100,17 +100,12 @@ export default function LandingPage() {
 
         <section id="submit" className="mb-24">
           <h2 className="text-2xl md:text-3xl font-bold text-purple-400 mb-8 text-center">Submit Your Complaint</h2>
-          <div className="max-w-xl mx-auto">
-            <ComplaintForm />
-          </div>
+          <ComplaintForm />
         </section>
 
         <section id="TrackComplaint" className="mb-24">
           <h2 className="text-2xl md:text-3xl font-bold text-purple-400 mb-8 text-center">Track Your Complaint</h2>
-          {/* Updated Track Complaint Form Width */}
-          <div className="max-w-xl mx-auto">
-            <ComplaintTracker />
-          </div>
+          <ComplaintTracker />
         </section>
       </main>
 
