@@ -1,10 +1,10 @@
 'use client'
 
 import { SetStateAction, useState } from 'react'
-import { Button } from "../component/ui/button/page";
-import { Input } from "../component/ui/input/page";
-import { Label } from "../component/ui/label/page";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../component/ui/card/page";
+import { Button } from "../component/ui/button/button";
+import { Input } from "../component/ui/input/input";
+import { Label } from "../component/ui/label/label";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../component/ui/card/card";
 
 export default function ComplaintTracker() {
   const [complaintId, setComplaintId] = useState('')

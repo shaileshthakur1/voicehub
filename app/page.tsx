@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Button } from "./component/ui/button/page"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "./component/ui/card/page";
+import { Button } from "./component/ui/button/button"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "./component/ui/card/card";
 import { MessageSquare, FileText, Clock, Shield } from 'lucide-react'
 import ComplaintForm from './complaintForm/page';
 import ComplaintTracker from './TrackComplaint/page';
